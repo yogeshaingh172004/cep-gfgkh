@@ -1,0 +1,519 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+#forum {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.post-form h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.post-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.post-form input[type="text"],
+.post-form textarea,
+.post-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.post-form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+.posts-list {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.posts-list h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post-header {
+    margin-bottom: 10px;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #00796b;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.btn-like,
+.btn-comment {
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-like:hover,
+.btn-comment:hover {
+    background-color: #0277bd;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .post-form input[type="text"],
+    .post-form textarea {
+        padding: 8px;
+    }
+
+    .btn-submit,
+    .btn-like,
+    .btn-comment {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-form {
+        padding: 15px;
+    }
+
+    .btn-submit,
+    .btn-like,
+    .btn-comment {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+}
+
+main {
+    padding: 40px 20px;
+}
+
+#about {
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-point {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    position: relative;
+    text-align: left; /* Default alignment for better text wrapping */
+}
+
+.about-point h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-point {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .about-point h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-point {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .about-point h2 {
+        font-size: 0.9rem;
+    }
+}
+
+#home {
+    color: #fff;
+    background: linear-gradient(to bottom right, #009688, #004d40);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.hero-content {
+    max-width: 600px;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.info-item {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.info-item h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .info-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.active {
+        display: block;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    section .container {
+        width: 95%;
+    }
+}
+#map-section {
+    padding: 40px 20px;
+    background: #e0f7fa;
+}
+
+#map-section {
+    padding: 40px 20px;
+    background: #e0f7fa;
+}
+
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ensure this height is appropriate */
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+#forum .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post .username {
+    font-weight: bold;
+}
+
+.post .profile-picture {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post .content {
+    margin-top: 10px;
+}
+
+.post .attachment {
+    margin-top: 10px;
+}
+
+.post .comments {
+    margin-top: 10px;
+}
+
+.comment {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.comment textarea {
+    width: calc(100% - 22px); /* Adjusting width to account for padding */
+}
